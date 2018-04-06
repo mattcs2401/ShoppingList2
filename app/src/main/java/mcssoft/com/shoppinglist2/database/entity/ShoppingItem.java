@@ -14,6 +14,22 @@ public class ShoppingItem {
     @NonNull
     @ColumnInfo(name = "_id") int id;                 // database row id.
 
+    @NonNull
+    @ColumnInfo(name = "Name") String Name;           // e.g. Carrot
+
+    @NonNull
+    @ColumnInfo(name = "TypeName") String TypeName;
+
+    @NonNull
+    @ColumnInfo(name = "TypeCode") String TypeCode;
+
+    @ColumnInfo(name = "TypeSubCode") String SubCode;
+
+    @NonNull
+    @ColumnInfo(name = "Visible") boolean Visible;
+
+    @NonNull
+    @ColumnInfo(name = "Archive") boolean Archive;
     //</editor-fold>
 }
 /*
