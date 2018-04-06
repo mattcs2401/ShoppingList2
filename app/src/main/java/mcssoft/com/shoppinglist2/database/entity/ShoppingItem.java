@@ -16,3 +16,13 @@ public class ShoppingItem {
 
     //</editor-fold>
 }
+/*
+Property Meaning / Description Example
+ID Unique identifier.
+Name A general name. Carrot
+Type A general type (class) name. Vegetable
+TypeCode The type’s code. VGTBL
+SubCode The type’s sub-code if applicable
+Visible A flag to indicate display in list. Y
+Archive A flag to indicate no longer used. N
+ */
