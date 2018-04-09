@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceValues>
+    <ShoppingItemTypes>
+        <ShoppingItemType Code="FRUIT">
+            <SubCode>NA</SubCode>
+            <Description></Description>
+        </ShoppingItemType>
+        <ShoppingItemType Code="MEAT">
+            <SubCode>FISH</SubCode>
+            <Description></Description>
+        </ShoppingItemType>
+        <ShoppingItemType Code="MEAT">
+            <SubCode>PORK</SubCode>
+            <Description></Description>
+        </ShoppingItemType>
+        <ShoppingItemType Code="MEAT">
+            <SubCode>CHKEN</SubCode>
+            <Description></Description>
+        </ShoppingItemType>
+        <ShoppingItemType Code="MEAT">
+            <SubCode>BEEF</SubCode>
+            <Description></Description>
+        </ShoppingItemType>
+        <ShoppingItemType Code="MEAT">
+            <SubCode>LAMB</SubCode>
+            <Description></Description>
+        </ShoppingItemType>
+        <ShoppingItemType Code="MEAT">
+            <SubCode>KNGRO</SubCode>
+            <Description></Description>
+        </ShoppingItemType>
+        <ShoppingItemType Code="MEAT">
+            <SubCode>OTHER</SubCode>
+            <Description></Description>
+        </ShoppingItemType>
+        <ShoppingItemType Code = "VGTBL">
+            <SubCode>NA</SubCode>
+            <Description></Description>
+        </ShoppingItemType>
+        <ShoppingItemType Code = "GENRL">
+            <SubCode>CLTNG</SubCode>
+            <Description></Description>
+        </ShoppingItemType>
+        <ShoppingItemType Code = "GENRL">
+            <SubCode>HSHLD</SubCode>
+            <Description></Description>
+        </ShoppingItemType>
+        <ShoppingItemType Code = "GENRL">
+            <SubCode>GRDEN</SubCode>
+            <Description></Description>
+        </ShoppingItemType>
+        <ShoppingItemType Code = "GENRL">
+            <SubCode>OUTDR</SubCode>
+            <Description></Description>
+        </ShoppingItemType>
+        <ShoppingItemType Code = "GENRL">
+            <SubCode>PRSNL</SubCode>
+            <Description></Description>
+        </ShoppingItemType>
+        <ShoppingItemType Code = "GENRL">
+            <SubCode>OTHER</SubCode>
+            <Description></Description>
+        </ShoppingItemType>
+    </ShoppingItemTypes>
+</ReferenceValues>

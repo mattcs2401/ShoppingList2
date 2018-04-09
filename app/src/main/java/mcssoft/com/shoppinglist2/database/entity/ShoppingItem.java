@@ -18,18 +18,18 @@ public class ShoppingItem {
     @ColumnInfo(name = "Name") String Name;           // e.g. Carrot
 
     @NonNull
-    @ColumnInfo(name = "TypeName") String TypeName;
+    @ColumnInfo(name = "TypeName") String TypeName;   // Vegetable.
 
     @NonNull
-    @ColumnInfo(name = "TypeCode") String TypeCode;
+    @ColumnInfo(name = "TypeCode") String TypeCode;   // VGTBL
 
-    @ColumnInfo(name = "TypeSubCode") String SubCode;
-
-    @NonNull
-    @ColumnInfo(name = "Visible") boolean Visible;
+    @ColumnInfo(name = "TypeSubCode") String SubCode; //
 
     @NonNull
-    @ColumnInfo(name = "Archive") boolean Archive;
+    @ColumnInfo(name = "Visible") boolean Visible;    // True
+
+    @NonNull
+    @ColumnInfo(name = "Archive") boolean Archive;    // False
     //</editor-fold>
 }
 /*
