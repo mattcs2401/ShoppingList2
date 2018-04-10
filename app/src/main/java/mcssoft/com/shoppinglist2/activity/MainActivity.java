@@ -10,6 +10,7 @@ import android.view.MenuItem;
 
 import mcssoft.com.shoppinglist2.R;
 import mcssoft.com.shoppinglist2.adapter.pager.ShoppingPagerAdapter;
+import mcssoft.com.shoppinglist2.database.ShoppingDatabase;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
 
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(viewPager));
+
+        // testing
+        ShoppingDatabase shoppingDatabase = ShoppingDatabase.getInstance(this);
 
 //        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {

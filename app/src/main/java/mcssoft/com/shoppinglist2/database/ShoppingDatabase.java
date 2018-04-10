@@ -13,9 +13,9 @@ import java.util.concurrent.Executors;
 import mcssoft.com.shoppinglist2.interfaces.room.IRefItemDAO;
 import mcssoft.com.shoppinglist2.utility.DataGenerator;
 
-abstract class ShoppingDatabase extends RoomDatabase {
+public abstract class ShoppingDatabase extends RoomDatabase {
 
-    static synchronized ShoppingDatabase getInstance(final Context context) {
+    static synchronized public ShoppingDatabase getInstance(final Context context) {
         if (instance == null) {
             instance = create(context);
             setDatabaseCreated(context);
