@@ -10,6 +10,8 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+import mcssoft.com.shoppinglist2.database.entity.ShoppingItemType;
+
 public class XmlParser {
 
     public XmlParser(InputStream inputStream) throws XmlPullParserException, IOException {
@@ -31,7 +33,7 @@ public class XmlParser {
         List list = null;
         switch(element) {
             case "ReferenceValues":
-                list = parseForMeetings();
+                list = parseForShoppingItemType();
                 break;
         }
         return list;
@@ -45,7 +47,7 @@ public class XmlParser {
      * @throws XmlPullParserException
      * @throws IOException
      */
-    private List parseForMeetings() throws XmlPullParserException, IOException {
+    private List parseForShoppingItemType() throws XmlPullParserException, IOException {
         List entries = new ArrayList();
 
         parser.require(XmlPullParser.START_TAG, nameSpace, "ReferenceValues");
@@ -57,13 +59,9 @@ public class XmlParser {
             String name = parser.getName();
             if (name.equals("ShoppingItemTypes")) {
                 String bp = "";
-//                entries.add(readMeeting(date));
-//                haveWeather = false;
+            } else if(name.equals("ShoppingItemType")) {
+                entries.add(readShoppingItemType());
             }
-//            else if(name.equals("Race") && !haveWeather) {
-//                entries = readMeetingWeather(entries);
-//                haveWeather = true;
-//            }
             else {
                 skip();
             }
@@ -71,24 +69,16 @@ public class XmlParser {
         return entries;
     }
 
-//    /**
-//     * Read Meeting infor from the Xml.
-//     * @param date A derived value from the RaceDayDate attribute of the RaceDay element.
-//     * @return A Meeting object.
-//     */
-//    private Meeting readMeeting(String date) {
-//        Meeting meeting = new Meeting();
-//        if(date != null) {
-//            meeting.setMeetingId(parser.getAttributeValue(nameSpace, "MtgId"));
-//            // // date format YYYY-MM-DDT00:00:00 (only want date part).
-//            meeting.setMeetingDate((date.split("T"))[0]);
-//            meeting.setAbandoned(parser.getAttributeValue(nameSpace, "Abandoned"));
-//            meeting.setVenueName(parser.getAttributeValue(nameSpace, "VenueName"));
-//            meeting.setHiRaceNo(parser.getAttributeValue(nameSpace, "HiRaceNo"));
-//            meeting.setMeetingCode(parser.getAttributeValue(nameSpace, "MeetingCode"));
-//        }
-//        return meeting;
-//    }
+    /**
+     * Read ShoppingItemType infor from the Xml.
+     * @return A ShoppingItemType object.
+     */
+    private ShoppingItemType readShoppingItemType() {
+        ShoppingItemType sit = new ShoppingItemType();
+        sit.setCode(parser.getAttributeValue(nameSpace, "Code"));
+        sit.setSubCode(parser.getAttributeValue(nameSpace, "SubCode"));
+        return sit;
+    }
     //</editor-fold>
 
     //<editor-fold defaultstate="collapsed" desc="Region: Utility">

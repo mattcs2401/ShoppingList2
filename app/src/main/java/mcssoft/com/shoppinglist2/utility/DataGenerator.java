@@ -23,7 +23,7 @@ public class DataGenerator {
         }
     }
 
-    public List<ShoppingItemType> patseForShoppingItemType() {
+    public static List<ShoppingItemType> patseForShoppingItemType() {
         List<ShoppingItemType> lSit = new ArrayList<>();
 
 

@@ -6,7 +6,6 @@ buildscript {
         google()
         jcenter()
     }
-//    addRepos(repositories)
 
     dependencies {
         classpath 'com.android.tools.build:gradle:3.2.0-alpha09'

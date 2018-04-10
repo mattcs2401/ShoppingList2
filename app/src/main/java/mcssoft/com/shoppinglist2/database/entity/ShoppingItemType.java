@@ -8,8 +8,13 @@ import android.support.annotation.NonNull;
 @Entity(tableName = "SHOPPING_ITEM_TYPE")
 public class ShoppingItemType {
 
+    public ShoppingItemType() {
+        code = "";
+        subCode = "";
+        description = "";
+    }
+
     public ShoppingItemType(@NonNull String code, @NonNull String subCode, String description) {
-//        this.id = id;
         this.code = code;
         this.subCode = subCode;
         this.description = description;
@@ -64,7 +69,4 @@ public class ShoppingItemType {
     @ColumnInfo(name = "SubCode") String subCode;
 
     @ColumnInfo(name = "Description") String description;
-
-//    @NonNull
-//    @ColumnInfo(name = "Archive") String archive;
 }

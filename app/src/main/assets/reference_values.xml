@@ -1,64 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ReferenceValues>
     <ShoppingItemTypes>
-        <ShoppingItemType Code="FRUIT">
-            <SubCode>NA</SubCode>
+        <ShoppingItemType Code="FRUIT" SubCode="NA">
             <Description></Description>
         </ShoppingItemType>
-        <ShoppingItemType Code="MEAT">
-            <SubCode>FISH</SubCode>
+        <ShoppingItemType Code="MEAT" SubCode="FISH">
             <Description></Description>
         </ShoppingItemType>
-        <ShoppingItemType Code="MEAT">
-            <SubCode>PORK</SubCode>
+        <ShoppingItemType Code="MEAT" SubCode="PORK">
             <Description></Description>
         </ShoppingItemType>
-        <ShoppingItemType Code="MEAT">
-            <SubCode>CHKEN</SubCode>
+        <ShoppingItemType Code="MEAT" SubCode="CHKEN">
             <Description></Description>
         </ShoppingItemType>
-        <ShoppingItemType Code="MEAT">
-            <SubCode>BEEF</SubCode>
+        <ShoppingItemType Code="MEAT" SubCode="BEEF">
             <Description></Description>
         </ShoppingItemType>
-        <ShoppingItemType Code="MEAT">
-            <SubCode>LAMB</SubCode>
+        <ShoppingItemType Code="MEAT" SubCode="LAMB">
             <Description></Description>
         </ShoppingItemType>
-        <ShoppingItemType Code="MEAT">
-            <SubCode>KNGRO</SubCode>
+        <ShoppingItemType Code="MEAT" SubCode="KNGRO">
             <Description></Description>
         </ShoppingItemType>
-        <ShoppingItemType Code="MEAT">
-            <SubCode>OTHER</SubCode>
+        <ShoppingItemType Code="MEAT" SubCode="OTHER">
             <Description></Description>
         </ShoppingItemType>
-        <ShoppingItemType Code = "VGTBL">
-            <SubCode>NA</SubCode>
+        <ShoppingItemType Code = "VGTBL" SubCode="NA">
             <Description></Description>
         </ShoppingItemType>
-        <ShoppingItemType Code = "GENRL">
-            <SubCode>CLTNG</SubCode>
+        <ShoppingItemType Code = "GENRL" SubCode="CLTNG">
             <Description></Description>
         </ShoppingItemType>
-        <ShoppingItemType Code = "GENRL">
-            <SubCode>HSHLD</SubCode>
+        <ShoppingItemType Code = "GENRL" SubCode="HSHLD">
             <Description></Description>
         </ShoppingItemType>
-        <ShoppingItemType Code = "GENRL">
-            <SubCode>GRDEN</SubCode>
+        <ShoppingItemType Code = "GENRL" SubCode="GRDEN">
             <Description></Description>
         </ShoppingItemType>
-        <ShoppingItemType Code = "GENRL">
-            <SubCode>OUTDR</SubCode>
+        <ShoppingItemType Code = "GENRL" SubCode="OUTDR">
             <Description></Description>
         </ShoppingItemType>
-        <ShoppingItemType Code = "GENRL">
-            <SubCode>PRSNL</SubCode>
+        <ShoppingItemType Code = "GENRL" SubCode="PRSNL">
             <Description></Description>
         </ShoppingItemType>
-        <ShoppingItemType Code = "GENRL">
-            <SubCode>OTHER</SubCode>
+        <ShoppingItemType Code = "GENRL" SubCode="OTHER">
             <Description></Description>
         </ShoppingItemType>
     </ShoppingItemTypes>
